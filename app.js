@@ -1,28 +1,28 @@
 const performers = [
   {
     name: "Sushant KC",
-    image: "/assets/sushant-kc.png",
+    image: "assets/sushant-kc.png",
     time: "10am - 2PM",
     genre: "Modern Folk, Pop, Rock, Gazal",
     song: "Aama",
   },
   {
     name: "Prabisha Adhikari",
-    image: "/assets/Prabisha-Adhikari.png",
+    image: "assets/Prabisha-Adhikari.png",
     time: "11am - 1PM",
     genre: "Modern Folk, Classical",
     song: "Jindagi Nai Bhandina",
   },
   {
     name: "Pramod Kharel",
-    image: "/assets/pramod.jpg",
+    image: "assets/pramod.jpg",
     time: "11am - 1PM",
     genre: "Modern Folk, Classical",
     song: "Jindagi Nai Bhandina",
   },
   {
     name: "Raju Lama",
-    image: "/assets/raju.jpg",
+    image: "assets/raju.jpg",
     time: "11am - 1PM",
     genre: "Modern Folk, Classical",
     song: "Jindagi Nai Bhandina",
