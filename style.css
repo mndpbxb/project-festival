@@ -149,9 +149,10 @@ h5 {
   }
 
   button {
-    background-color: rgb(113, 195, 240);
-    border: 2px solid azure;
+    background-color: rgb(48, 240, 160);
+    color: #021420;
     width: 25%;
+    border: none;
   }
 }
 
