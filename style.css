@@ -105,13 +105,12 @@ a {
   text-decoration: none;
 } */
 
-h5{
+h5 {
   margin-bottom: 10px;
   color: #fff;
   font-size: 30px;
   font-family: "Josefin Sans", sans-serif;
 }
-
 
 .artist-card-position {
   display: flex;
@@ -136,22 +135,24 @@ h5{
 .artist-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+/* 
+  transition-property: transform, box-shadow;
+  transition-duration: 5s; */
 
-  h5{
-      font-size: 40px;
+  h5 {
+    font-size: 40px;
   }
 
-  .content{
+  .content {
     position: absolute;
     bottom: 12%;
   }
 
-  button{
+  button {
     background-color: rgb(113, 195, 240);
     border: 2px solid azure;
     width: 25%;
   }
-
 }
 
 .artist-card img {
@@ -160,20 +161,28 @@ h5{
   object-fit: cover;
 }
 .overlay {
-  position: absolute; 
-  background: radial-gradient( circle, rgba(2, 0, 36, 0.6) 0%, rgba(9, 97, 121, 0.6) 35%, rgba(0, 212, 255, 0.6) 100% );
-  color: #f1f1f1; 
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 0.6) 0%,
+    rgba(9, 97, 121, 0.6) 35%,
+    rgba(0, 212, 255, 0.6) 100%
+  );
+  color: #f1f1f1;
   width: 100%;
-  opacity:1;
+  opacity: 1;
   color: white;
   height: 100%;
 }
 
-.overlay:hover{
+.overlay:hover {
   text-align: center;
   transform: scale(1.1);
   background: radial-gradient(
-    rgba(2, 0, 36, 0.8) 0%, rgba(9, 97, 121, 0.8) 35%, rgba(0, 212, 255, 0.8) 100% );
+    rgba(2, 0, 36, 0.8) 0%,
+    rgba(9, 97, 121, 0.8) 35%,
+    rgba(0, 212, 255, 0.8) 100%
+  );
 }
 
 .artist-card .content {
@@ -187,21 +196,22 @@ h5{
 }
 
 .artist-card .date,
-.artist-card .title, 
-.artist-card .genre{
+.artist-card .title,
+.artist-card .genre {
   margin: 10px 0;
   font-weight: 800;
   font-size: 20px;
 }
 
-.icon-inner, .ionicon, svg {
+.icon-inner,
+.ionicon,
+svg {
   margin-top: 5px;
 }
 
-span{
-  margin-left:10px;
+span {
+  margin-left: 10px;
 }
-
 
 button {
   border: 2px solid rgb(113, 195, 240);
@@ -212,5 +222,3 @@ button {
   width: 20%;
   border-radius: 12px;
 }
-
-
