@@ -26,10 +26,8 @@
       crossorigin=""
     ></script>
     <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="style.css">
-    <style>
-    
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
   </head>
   <body>
     <nav class="nav-bar">
@@ -42,100 +40,103 @@
         <a href="#">Contact</a>
       </div>
     </nav>
-
-    <div class="cover-section">
-      <div class="overlay">
-        <h1 class="heading">Emerging Music Festival</h1>
+    <main>
+      <div class="cover-section">
+        <div class="overlay">
+          <h1 class="heading">Emerging Music Festival</h1>
+          <div class="details">
+            <p>
+              <ion-icon name="calendar-number-outline"></ion-icon> January 29 -
+              31
+            </p>
+            <p>
+              <ion-icon name="location-outline"></ion-icon> Dashrath Stadium,
+              Kathmandu
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-heading">
+        <h2>Get your tickets now!</h2>
         <div class="details">
-          <p>
-            <ion-icon name="calendar-number-outline"></ion-icon> January 29 - 31
-          </p>
-          <p>
-            <ion-icon name="location-outline"></ion-icon> Dashrath Stadium,
-            Kathmandu
-          </p>
+          <ion-icon name="ticket-outline"></ion-icon> Multiple Options to choose
+          from <ion-icon name="ticket-outline"></ion-icon>
         </div>
       </div>
-    </div>
-    <div class="ticket-heading">
-      <h2>Get your tickets now!</h2>
-      <div class="details">
-        <ion-icon name="ticket-outline"></ion-icon> Multiple Options to choose
-        from <ion-icon name="ticket-outline"></ion-icon>
-      </div>
-    </div>
 
-    <div class="ticket-section">
-      <div class="ticket-option ticket-premium">
-        <div class="ticket-bg tbg-premium">
-          <h2><ion-icon name="musical-notes-outline"></ion-icon> Premium</h2>
-          <p>
-            <ion-icon name="star-half-outline"></ion-icon> Exclusive access to
-            front rows
-          </p>
-          <p>
-            <ion-icon name="star-half-outline"></ion-icon> 15% off of
-            merchandise
-          </p>
-          <p>
-            <ion-icon name="star-half-outline"></ion-icon> Backstage meet and
-            greet
-          </p>
-          <p><ion-icon name="pricetags-outline"></ion-icon> Price: $150</p>
-          <a href="/tickets/"><button>Buy Now</button></a>
+      <div class="ticket-section">
+        <div class="ticket-option ticket-premium">
+          <div class="ticket-bg tbg-premium">
+            <h2><ion-icon name="musical-notes-outline"></ion-icon> Premium</h2>
+            <p>
+              <ion-icon name="star-half-outline"></ion-icon> Exclusive access to
+              front rows
+            </p>
+            <p>
+              <ion-icon name="star-half-outline"></ion-icon> 15% off of
+              merchandise
+            </p>
+            <p>
+              <ion-icon name="star-half-outline"></ion-icon> Backstage meet and
+              greet
+            </p>
+            <p><ion-icon name="pricetags-outline"></ion-icon> Price: $150</p>
+            <a href="/tickets/"><button>Buy Now</button></a>
+          </div>
+        </div>
+        <div class="ticket-option ticket-normal">
+          <div class="ticket-bg tbg-normal">
+            <h2><ion-icon name="musical-note-outline"></ion-icon> Normal</h2>
+            <p>
+              <ion-icon name="star-half-outline"></ion-icon> Access to main
+              event area
+            </p>
+            <p>
+              <ion-icon name="star-half-outline"></ion-icon> 5% off of
+              merchandise
+            </p>
+            <p>
+              <ion-icon name="star-half-outline"></ion-icon> Limited number of
+              entries
+            </p>
+            <p><ion-icon name="pricetags-outline"></ion-icon> Price: $75</p>
+            <a href="/tickets/"><button>Buy Now</button></a>
+          </div>
         </div>
       </div>
-      <div class="ticket-option ticket-normal">
-        <div class="ticket-bg tbg-normal">
-          <h2><ion-icon name="musical-note-outline"></ion-icon> Normal</h2>
-          <p>
-            <ion-icon name="star-half-outline"></ion-icon> Access to main event
-            area
-          </p>
-          <p>
-            <ion-icon name="star-half-outline"></ion-icon> 5% off of merchandise
-          </p>
-          <p>
-            <ion-icon name="star-half-outline"></ion-icon> Limited number of
-            entries
-          </p>
-          <p><ion-icon name="pricetags-outline"></ion-icon> Price: $75</p>
-          <a href="/tickets/"><button>Buy Now</button></a>
-        </div>
-      </div>
-    </div>
 
-    <div id="map"></div>
-    <script type="text/javascript" src="app.js"></script>
-    <script>
-      const map = L.map("map").setView(
-        [27.695000978800444, 85.31483972431158],
-        16
-      );
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-        attribution:
-          '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-      L.marker([27.695000978800444, 85.31483972431158])
-        .addTo(map)
-        .bindPopup(
-          '<ion-icon name="navigate-circle-outline"></ion-icon>' +
-            "Music Festival"
-        )
-        .openPopup();
-    </script>
-   <footer id="footer">
-    <div class="copyright">
-      <i class="fa-regular fa-copyright"></i>
-      <p class="copyright-text">Copyright 2024 EMF/Kathmandu</p>
-    </div>
-    <div class="social">
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </footer>
+      <div id="map"></div>
+      <script type="text/javascript" src="app.js"></script>
+      <script>
+        const map = L.map("map").setView(
+          [27.695000978800444, 85.31483972431158],
+          16
+        );
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution:
+            '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+        L.marker([27.695000978800444, 85.31483972431158])
+          .addTo(map)
+          .bindPopup(
+            '<ion-icon name="navigate-circle-outline"></ion-icon>' +
+              "Music Festival"
+          )
+          .openPopup();
+      </script>
+    </main>
+    <footer id="footer">
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i>
+        <p class="copyright-text">Copyright 2024 EMF/Kathmandu</p>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
 
     <script
       type="module"
