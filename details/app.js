@@ -62,7 +62,7 @@ function generatePerformerCard(performer) {
              <span class="genre"><i class="fa-solid fa-music"></i> Genre:<span> ${performer.genre}</span></span><br/>
              <span class="song"><i class="fa-solid fa-icons"></i> Song:<span class="song-name"> ${performer.song}</span></span><br/>
              <div class="buy-button">
-             <a href="/tickets"><button><span><i class="fa-solid fa-ticket-simple"></i> Buy Tickets</span></button></a> 
+             <a href="../tickets/index.html"><button><span><i class="fa-solid fa-ticket-simple"></i> Buy Tickets</span></button></a> 
              </div>
              </div>
              </div>
