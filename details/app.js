@@ -1,4 +1,3 @@
-
 const performers = [
   {
     name: "Prabisha Adhikari",
@@ -55,16 +54,18 @@ function generatePerformerCard(performer) {
             <div class="card">
             ${thumbnail}
         
-              <div class="card-content">
-                <h2>${performer.name}</h2>
-                <span class="date"><i class="fa-solid fa-calendar-check"></i> Date:<span class="time-hour"> ${performer.date}</span></span><br />
-                <span class="time"><i class="fa-solid fa-clock"></i> Time:<span class="time-hour"> ${performer.time}</span></span><br />
-                <span class="genre"><i class="fa-solid fa-music"></i> Genre:<span> ${performer.genre}</span></span><br/>
-                <span class="song"><i class="fa-solid fa-icons"></i> Song:<span class="song-name"> ${performer.song}</span></span><br/>
-                <div class="buy-button">
-                <a href="/tickets"><button><span><i class="fa-solid fa-ticket-simple"></i> Buy Tickets</span></button></a> 
-                </div>
-              </div>
+            <div class="card-content">
+            <div class="overlay">  
+             <h2>${performer.name}</h2>
+             <span class="date"><i class="fa-solid fa-calendar-check"></i> Date:<span class="time-hour"> ${performer.date}</span></span><br />
+             <span class="time"><i class="fa-solid fa-clock"></i> Time:<span class="time-hour"> ${performer.time}</span></span><br />
+             <span class="genre"><i class="fa-solid fa-music"></i> Genre:<span> ${performer.genre}</span></span><br/>
+             <span class="song"><i class="fa-solid fa-icons"></i> Song:<span class="song-name"> ${performer.song}</span></span><br/>
+             <div class="buy-button">
+             <a href="/tickets"><button><span><i class="fa-solid fa-ticket-simple"></i> Buy Tickets</span></button></a> 
+             </div>
+             </div>
+             </div>
             </div>
           `;
 

@@ -9,7 +9,6 @@
 .card {
   display: flex;
   overflow: hidden;
-
   background: radial-gradient(
     circle,
     rgba(2, 0, 36, 1) 0%,
@@ -31,6 +30,18 @@
   border: 2px solid rgb(113, 195, 240);
 }
 
+.overlay {
+  padding: 1%;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.overlay:hover {
+  padding: 2%;
+  border-radius: 8px;
+  background-color: rgba(69, 61, 107, 0.5);
+}
+
 .card-content h2 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
@@ -50,7 +61,7 @@ span.time,
 }
 .buy-button {
   float: right;
-  margin-top: 16px;
+  margin-top: 2px;
 }
 
 button {
