@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tickets - EMF / Kathmandu</title>
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="tickets.css" />
+    <script
+      src="https://kit.fontawesome.com/9f5233dddd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="nav-bar">
+      <p class="logo">EMF / Kathmandu</p>
+
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/details/">Details</a>
+        <a href="#">Buy Tickets</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Purchase Form -->
+    <form id="purchaseForm">
+      <section class="form">
+        <div class="overlay">
+          <div class="ticketType">
+            <label for="ticketType">Ticket Type:</label>
+            <select id="ticketType" name="ticketType">
+              <option value="standard">Standard Ticket</option>
+              <option value="vip">VIP Ticket</option>
+            </select>
+          </div>
+
+          <div class="quantity">
+            <label for="quantity">Quantity:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              placeholder="Enter number of tickets"
+              min="1"
+              value=""
+            />
+          </div>
+
+          <div class="creditCard">
+            <label for="creditCard">Credit Card (6 digits):</label>
+            <input
+              type="number"
+              id="creditCard"
+              name="creditCard"
+              placeholder="Enter 6 Digits Credit Card"
+              value=""
+            />
+          </div>
+        </div>
+      </section>
+      <div class="button">
+        <button type="button">BUY TICKETS</button>
+      </div>
+    </form>
+
+    <!-- Order Summary Section -->
+    <div id="orderSummary" style="display: none">
+      <div class="overlay-summary">
+        <h2 id="summary-heading">Order Summary</h2>
+        <p id="numberOfTickets">Number of tickets: 0</p>
+        <p id="pricePerTicket">Price per ticket: $0.00</p>
+        <p id="subtotal">Subtotal: $0.00</p>
+        <p id="tax">Tax (13%): $0.00</p>
+        <p id="finalPrice">Final Price: $0.00</p>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i>
+        <p class="copyright-text">Copyright 2024 EMF/Kathmandu</p>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- Script to add Javascript File  -->
+    <script src="tickets.js"></script>
+  </body>
+</html>
